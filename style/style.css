@@ -3,22 +3,25 @@
     /* grid-template-columns: 150px auto 150px; */
     grid-template-columns: 8;
     /* grid-template-rows: repeat(3, 100px); */
-    grid-template-rows: 10;
-    grid-gap: 1em;
+    grid-template-rows: 8;
+    grid-gap: 0em;
     grid-template-areas: "header header header header header header header header"
-                         "nav1 nav2 nav3 nav4 nav5 nav6 nav7 nav8"
+                         "nav1 nav1 nav1 nav1 nav2 nav2 nav2 nav2"
+                         "art1 art1 art1 art1 art1 art1 art1 art1"
+                         "kdesc kdesc kdesc kdesc kdesc kdesc kdesc kdesc"
                          "footer footer footer";
                         
   }
  
   .header, .footer {
     grid-column: 1 / 8;
+    font-style: helvetica;
   }
-  .header {
+  /* .header {
     grid-area: header;
-    background-color: tomato;
-    text: white;
-    font-family: sans-serif;
+    background-color: white;
+    text: black;
+    font-family: sans-serif; */
 
   }
   
@@ -27,18 +30,29 @@
   }
   .nav1 {
       grid-area: nav1;
-
-
-
+      background-color: lightskyblue;
+      font: black;
+      font-style: roboto;
   }
-  /* .sidebar-left {
-    grid-area: sidebar-1;
+  .nav2 {
+    grid-area: nav2;
+    background-color: lightskyblue;
   }
-  
-  .article {
-    grid-area: article;
-  }
-  
-  .sidebar-right {
-    grid-area: sidebar-2;
-  } */
+  .art1 {
+    grid-area: art1;
+    font-style: helvetica;
+    display: flex;
+    justify-content: center;
+    background-image: url("..style\img\Awesome_JavaScript_Programmer.jpg") repeat-x;
+    background-size: cover;
+    /* opacity: 50%; */
+ }
+.kdesc {
+  grid-area: kdesc;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+ .portEx {
+
+ }
